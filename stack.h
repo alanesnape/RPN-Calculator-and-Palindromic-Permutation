@@ -1,0 +1,20 @@
+//
+// Created by fishy on 2026/2/6.
+//
+#pragma once
+
+#include "array.h"
+#include <stdbool.h>
+
+/* Structures */
+
+typedef Array Stack;
+
+/* Functions */
+
+Stack*  stack_create();
+void	stack_delete(Stack *stack);
+void    stack_push(Stack *stack, int value);
+int	    stack_pop(Stack *stack);
+int     stack_top(Stack *stack);
+bool	stack_empty(Stack *stack);
